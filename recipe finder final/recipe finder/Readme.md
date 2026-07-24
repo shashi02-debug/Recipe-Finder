@@ -1,4 +1,5 @@
 #Recipe Finder
+
 📖 Overview
 
 Deciding what to cook with the ingredients on hand can be time-consuming. Recipe Finder solves this by letting users type in the ingredients they have, then instantly fetching matching recipes — complete with images, titles, and full cooking instructions — using the Spoonacular API.
