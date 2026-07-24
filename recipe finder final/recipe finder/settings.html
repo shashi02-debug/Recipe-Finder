@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #e1bee7);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar nav ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .navbar nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .navbar nav ul li a:hover {
+            color: #8e24aa;
+        }
+
+        /* Container */
+        .container {
+            max-width: 700px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.03);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #8e24aa;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Settings Options */
+        .settings-group {
+            margin-bottom: 30px;
+        }
+
+        .settings-group h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .settings-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .settings-option:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .settings-option label {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .settings-option input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+        }
+
+        .settings-option select {
+            padding: 8px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .settings-option button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background: #8e24aa;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .settings-option button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            color: #555;
+            font-size: 0.9rem;
+        }
+
+        footer strong {
+            color: #8e24aa;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Settings</h1>
+
+        <div class="settings-group">
+            <h2>Preferences</h2>
+            <div class="settings-option">
+                <label for="dark-mode">Enable Dark Mode</label>
+                <input type="checkbox" id="dark-mode">
+            </div>
+            <div class="settings-option">
+                <label for="language">Language</label>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="settings-group">
+            <h2>Notifications</h2>
+            <div class="settings-option">
+                <label for="email-notifications">Email Notifications</label>
+                <input type="checkbox" id="email-notifications">
+            </div>
+            <div class="settings-option">
+                <label for="sms-notifications">SMS Notifications</label>
+                <input type="checkbox" id="sms-notifications">
+            </div>
+        </div>
+
+        <div class="settings-group">
+            <h2>Account</h2>
+            <div class="settings-option">
+                <button>Reset Password</button>
+            </div>
+            <div class="settings-option">
+                <button>Delete Account</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Developed by <strong>Manas Ram, Bhanu Teja, Shashikiran</strong></p>
+    </footer>
+</body>
+</html>

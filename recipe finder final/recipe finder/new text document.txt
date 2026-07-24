@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Who We Are</h2>
+            <p>We are passionate about providing useful content to help you with your needs!</p>
+        </section>
+        <section>
+            <h2>Our Mission</h2>
+            <p>Our mission is to make your life easier by providing high-quality articles and resources.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 All Rights Reserved</p>
+    </footer>
+</body>
+</html>
